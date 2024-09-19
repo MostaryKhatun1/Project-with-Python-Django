@@ -1,1 +1,34 @@
+# Create a Python file named 'simple_calculator.py'
+with open('simple_calculator.py', 'w') as f:
+    f.write("""
+def add(a, b):
+    \"\"\"Return the sum of a and b.\"\"\"
+    return a + b
 
+def subtract(a, b):
+    \"\"\"Return the subtraction of b from a.\"\"\"
+    return a - b
+    """)
+
+
+# simple_calculator.py
+
+def add(a, b):
+    """Return the sum of a and b."""
+    return a + b
+
+def subtract(a, b):
+    """Return the subtraction of b from a."""
+    return a - b
+
+
+# Import the module after uploading it to the Colab environment
+import simple_calculator as sc
+
+# Test the add function
+result_add = sc.add(10, 5)
+print(f"Addition: 10 + 5 = {result_add}")
+
+# Test the subtract function
+result_subtract = sc.subtract(10, 5)
+print(f"Subtraction: 10 - 5 = {result_subtract}")
